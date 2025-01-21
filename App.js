@@ -1,7 +1,9 @@
-import { Text, View } from 'react-native';
+import Login from "./src/screens/login/login";
 
 export default function App() {
-  return (
-      <Text>Hello World!</Text>
+
+  return (<>
+    <Login/>
+  </>
   );
 }
