@@ -12,6 +12,7 @@ export const styles = {
     label: {
         marginLeft: 5,
         color: COLORS.dark_gray,
-        fontSize: FONT_SIZE.md
+        fontSize: FONT_SIZE.md,
+        marginBottom: 10
     }
 }
