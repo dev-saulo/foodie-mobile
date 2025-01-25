@@ -1,12 +1,14 @@
-import { View, Text, TouchableOpacity } from "react-native"
+import { View, Text, TouchableOpacity, ScrollView } from "react-native"
 import { styles } from "./registro.style"
 import Header from "../../components/header/header"
 import TextBox from "../../components/textbox/textbox"
 import Button from "../../components/button/button"
 
 
-function Registro() {
-    return <View style={styles.container}>
+function Registro(props) {
+    return <>
+    <View style={styles.container}>
+        <ScrollView style={styles.scrollView}>
         <Header texto="Crie sua conta."/>
 
         <View style={styles.formGroup}>
@@ -27,16 +29,15 @@ function Registro() {
             </View>
 
             <View style={styles.form}>
-                <Button texto="Próximo passo" />
+                <Button texto="Próximo passo" 
+                onPress={() => props.navigation.navigate("registro2")}/>
             </View>
         </View>
+        </ScrollView>
 
-        <View style={styles.footer}>
-            <TouchableOpacity>
-                <Text style={styles.footerText}>Acessar minha conta</Text>
-            </TouchableOpacity>
-        </View>
+
     </View>
+    </>
 }
 
 export default Registro;

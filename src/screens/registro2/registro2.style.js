@@ -13,6 +13,17 @@ export const styles = {
         width: "100%",
         marginBottom: 20
     },
+    form70: {
+        width: "70%",
+        marginBottom: 15,
+        paddingRight: 10
+    },
+    form30: {
+        width: "30%"
+    },
+    formHorizontal: {
+        flexDirection: "row",
+    },
     scrollView: {
         width: "100%"
     },

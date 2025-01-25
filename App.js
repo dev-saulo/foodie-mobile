@@ -1,10 +1,9 @@
-import Login from "./src/screens/login/login";
-import Registro from "./src/screens/registro/registro";
+import Routes from "./src/routes";
 
 export default function App() {
 
   return (<>
-    <Registro/>
+    <Routes />
   </>
   );
 }
